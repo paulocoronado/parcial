@@ -26,7 +26,6 @@ btnTrees.addEventListener('click',
     async ()=>{
         let response= await fetch("arboles_britalia.geojson");
         let datos= await response.json();
-
         //Agregar la capa al mapa
         L.geoJSON(
             datos,
